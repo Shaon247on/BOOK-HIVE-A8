@@ -5,8 +5,7 @@ import WishlistBooks from "../WishlistBooks/WishlistBooks";
 
 const ListedBooks = () => {
 
-    const allBooks = useLoaderData()
-    console.log(Array.isArray(allBooks))   
+    const allBooks = useLoaderData()    
 
     return (
         <div>
@@ -15,10 +14,10 @@ const ListedBooks = () => {
                 <Dropdown></Dropdown>
             </div>
             <div role="tablist" className="tabs tabs-lifted mx-24">
-                <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Tab 1" />
+                <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Read Books" />
                 <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6"><ReadBooks allBooks={allBooks}></ReadBooks></div>
 
-                <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Tab 2" checked />
+                <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Wishlist Books" checked />
                 <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6"><WishlistBooks></WishlistBooks> </div>
             </div>
         </div>

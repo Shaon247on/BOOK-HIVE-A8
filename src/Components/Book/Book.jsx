@@ -13,7 +13,6 @@ const Book = () => {
 
     const handleReadButton = () => {
         const bookedMarked = getStoredItem()
-        console.log(bookedMarked)
         const exists = bookedMarked.find(booked => booked === idNum)
         if (!exists) {
             savedItem(idNum)
