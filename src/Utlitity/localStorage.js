@@ -1,17 +1,17 @@
-const getStoredItem = (value)=> {
-    const storedItem = localStorage.getItem(value)
+const getStoredItem = ()=> {
+    const storedItem = localStorage.getItem('read')
     if(storedItem){
         return JSON.parse(storedItem)
     }
     return []
 }
 
-const savedItem = (id, value) =>{
-    const storedItems = getStoredItem(value)
+const savedItem = id =>{
+    const storedItems = getStoredItem()
     const exists = storedItems.find(item => item ===id)
     if(!exists){
         storedItems.push(id)
-        localStorage.setItem(value, JSON.stringify(storedItems))
+        localStorage.setItem('read', JSON.stringify(storedItems))
     }
 }
 
