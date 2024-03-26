@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { savedItem } from "../../Utlitity/localStorage";
 
 const Book = () => {
     const books = useLoaderData()
@@ -7,6 +8,12 @@ const Book = () => {
     const detailedBook = books.find(book => book.id === idNum)
     const { author, bookName, category, image, publisher, rating, review, tags, totalPages, yearOfPublishing
     } = detailedBook
+
+    const handleReadButton = (e)=>{
+        savedItem(idNum, e)
+        console.log(idNum)
+
+    }
     return (
         <div className="flex gap-12 mx-24 mt-8 items-center">
             <div className="p-12 w-1/2 h-[580px] text-center ">
@@ -56,7 +63,7 @@ const Book = () => {
                     </tbody>
                 </table>
                 <div>
-                    <button className="btn w-[145px] mr-4 bg-[#1313134D] font-semibold">Read</button><button className="btn w-[145px] hover:bg-[#59C6D299] bg-[#59C6D2] text-white font-semibold">Wishlist</button>
+                    <button onClick={()=>handleReadButton('Read')} className="btn w-[145px] mr-4 bg-[#1313134D] font-semibold">Read</button><button onClick={()=>handleReadButton('Wishlist')} className="btn w-[145px] hover:bg-[#59C6D299] bg-[#59C6D2] text-white font-semibold">Wishlist</button>
 
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Books from "../Books/Books";
 import { useState } from "react";
 
@@ -13,7 +13,7 @@ const Home = () => {
                 <div className="ml-5">
                     <h1 className="play font-bold text-5xl mb-5">Explore Worlds Through <br /> Pages Book Reviews</h1>
                     <p className="text-sm text-gray-600 w-[500px] ">Welcome to <span className="font-semibold underline">BOOK HIVE</span>,<br /> Where literature comes to life! Dive into captivating reviews, insightful critiques, and personalized recommendations. Let the adventure begin!</p>
-                    <button className="btn bg-[#23BE0A] text-white font-bold mt-9">View The List</button>
+                    <button className="btn bg-[#23BE0A] text-white font-bold mt-9"> <Link to='/list'>View The List</Link> </button>
                 </div>
                 <div className=""><img src="https://i.ibb.co/F5W9FQF/banner.jpg" alt="" /></div>
             </section>
