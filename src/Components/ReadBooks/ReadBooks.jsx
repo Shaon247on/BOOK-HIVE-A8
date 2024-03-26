@@ -1,37 +1,38 @@
 import { useEffect, useState } from "react";
 import { getStoredItem } from "../../Utlitity/localStorage";
-import PropTypes from 'prop-types';
 import { useLoaderData } from "react-router-dom";
+import ReadBook from "../ReadBook/ReadBook";
 
 const ReadBooks = () => {
-        const allBooks = useLoaderData()
-        const [read, setRead] = useState([])
-        useEffect(()=>{
-            const readStored= getStoredItem()
-            if(readStored.length > 0){
-                const reads = []
-                for (const id of readStored){
-                    const readID = allBooks.find(book => book.id === id)
-                    console.log(readID)
-                    if(readID){
-                        reads.push(readID)
-                    }
-                    setRead(reads)
+    const allBooks = useLoaderData()
+    const [reads, setReads] = useState([])
+    useEffect(() => {
+        const readStored = getStoredItem()
+        if (readStored.length > 0) {
+            const readList = []
+            for (const id of readStored) {
+                const readID = allBooks.find(book => book.id === id)
+                if (readID) {
+                    readList.push(readID)
                 }
-                console.log(reads)                  
-
+                setReads(readList)
             }
-        },[])
-        console.log(read)
+        }
+    }, [])
+    console.log(reads)
     return (
         <div>
-            <h1>Hello from read books: {read.length}</h1>
-        </div>
+            <div className="text-center">
+                <h1 className="text-4xl font-bold">Total Read Books: {reads.length}</h1>
+            </div>
+            <div>
+                {
+                    reads.map(read => <ReadBook key={read.id} read={read}></ReadBook>)
+                }
+            </div>            
+        </div>        
     );
 };
 
-ReadBooks.propTypes={
-    allBooks: PropTypes.array.isRequired  
-}
 
 export default ReadBooks;
