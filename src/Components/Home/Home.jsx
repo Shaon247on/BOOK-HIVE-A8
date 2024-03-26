@@ -5,7 +5,6 @@ import { useState } from "react";
 const Home = () => {
     const allBooks = useLoaderData()
     const [displayBooks, setDisplayBooks] = useState(6)
-    console.log(allBooks)
 
     return (
         <div className="mx-28">

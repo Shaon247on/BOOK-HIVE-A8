@@ -1,34 +1,37 @@
 import { IoIosStarOutline } from "react-icons/io";
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 const Books = ({ books }) => {
-    const { author, bookName, category, image, rating, tags } = books
-    console.log(books)
+    const { id, author, bookName, category, image, rating, tags } = books
+    console.log(bookName)
 
     return (
         <div className="card bg-base-100 shadow-xl p-6">
-            <figure><img src={image} alt={bookName} className="h-[190px] w-[150px]" /></figure>
-            <div className="card-body">
-                <div className="flex justify-start gap-0 text-[#23BE0A] mx-2">
-                    {
-                        tags.map((tag, idx) => <p key={idx} className="text-[#23BE0A] font-medium mb-2">{tag}</p>)
-                    }
-                </div>
-                <h2 className="card-title play text-2xl font-bold ">{bookName}</h2>
-                <p className="font-semibold text-[#131313CC] mb-7">By: {author}</p>
-                <div className="card-actions justify-between">
-                    <p className="font-medium text-[#131313CC]">{category}</p>
-                    <div className="flex items-center gap-2">
-                        <p className="text-[16px] font-medium text-[#131313CC]">{rating}</p>
-                        <IoIosStarOutline className="text-[#131313CC] text-[18px] mt-[-2px]"></IoIosStarOutline>
+            <Link to={`/book/${id}`}>
+                <figure><img src={image} alt={bookName} className="h-[190px] w-[150px]" /></figure>
+                <div className="card-body">
+                    <div className="flex">
+                        {
+                            tags.map((tag, idx) => <p key={idx} className="text-[#23BE0A] font-medium mb-2">{tag}</p>)
+                        }
+                    </div>
+                    <h2 className="card-title play text-2xl font-bold ">{bookName}</h2>
+                    <p className="font-semibold text-[#131313CC] mb-7">By: {author}</p>
+                    <div className="card-actions justify-between">
+                        <p className="font-medium text-[#131313CC]">{category}</p>
+                        <div className="flex items-center gap-2">
+                            <p className="text-[16px] font-medium text-[#131313CC]">{rating}</p>
+                            <IoIosStarOutline className="text-[#131313CC] text-[18px] mt-[-2px]"></IoIosStarOutline>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 };
 
-Books.propTypes={
+Books.propTypes = {
     books: PropTypes.object.isRequired
 }
 
