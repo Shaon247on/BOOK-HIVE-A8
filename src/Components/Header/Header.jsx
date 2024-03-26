@@ -3,15 +3,15 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
 
     const links = <>
-        <li><NavLink to={'/'}>Home</NavLink></li>
-        <li><NavLink to='/list'>Listed Books</NavLink></li>
-        <li><NavLink to='/page'>Pages to Read</NavLink></li>
-        <li><NavLink to='/FAQ'>FAQ</NavLink></li>
-        <li><NavLink to='/blogs'>Blogs</NavLink></li>
+        <li className="hover:bg-blue-gray-100 rounded-2xl hover:scale-105 ml-3 transition"><NavLink to={'/'}>Home</NavLink></li>
+        <li className="hover:bg-blue-gray-100 rounded-2xl hover:scale-105 ml-3 transition"><NavLink to='/list'>Listed Books</NavLink></li>
+        <li className="hover:bg-blue-gray-100 rounded-2xl hover:scale-105 ml-3 transition"><NavLink to='/page'>Pages to Read</NavLink></li>
+        <li className="hover:bg-blue-gray-100 rounded-2xl hover:scale-105 ml-3 transition"><NavLink to='/FAQ'>FAQ</NavLink></li>
+        <li className="hover:bg-blue-gray-100 rounded-2xl hover:scale-105 ml-3 transition"><NavLink to='/blogs'>Blogs</NavLink></li>
     </>
 
     return (
-        <div className="mx-24 mt-5">
+        <div className="mx-0 lg:mx-24 mt-5">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -22,7 +22,7 @@ const Header = () => {
                             {links}
                         </ul>
                     </div>
-                    <h1 className="text-2xl font-bold">B<span className="text-[#23BE0A]">O</span><span className="text-[#59C6D2]">O</span>K HIVE</h1>
+                    <h1 className="text-base lg:text-2xl font-bold transition border-2 p-4 hover:scale-105 hover:border-[#59C6D2] hover:no-underline focus:no-underline rounded-2xl">B<span className="text-[#23BE0A]">O</span><span className="text-[#59C6D2]">O</span>K HIVE</h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -30,7 +30,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-3">
-                    <a className="btn bg-[#23BE0A] text-white px-6">Sign In</a>
+                    <a className="btn bg-[#23BE0A] text-white px-6 hidden lg:flex">Sign In</a>
                     <a className="btn bg-[#59C6D2] text-white px-6">Sign Up</a>
                 </div>
             </div>

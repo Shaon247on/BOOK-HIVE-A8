@@ -6,8 +6,8 @@ const Books = ({ books }) => {
     const { id, author, bookName, category, image, rating, tags } = books
 
     return (
-        <div className="card bg-base-100 shadow-xl p-6">
-            <Link to={`/book/${id}`}>
+        <div className="card transition border-2 p-4 hover:scale-105 hover:border-[#59C6D2] hover:no-underline focus:no-underline">
+            <Link to={`/${id}`}>
                 <figure><img src={image} alt={bookName} className="h-[190px] w-[150px]" /></figure>
                 <div className="card-body">
                     <div className="flex">

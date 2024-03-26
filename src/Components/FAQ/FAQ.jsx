@@ -11,8 +11,9 @@ const FAQ = () => {
 
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
     return (
-        <div className="grid grid-cols-5 gap-12 mx-28 mt-28 items-center">
-            <div className="col-span-3">
+        <div className="block lg:grid grid-flow-row grid-cols-5 gap-12 mx-5 lg:mx-28 mt-6 lg:mt-28 items-center">
+            <div className="col-span-2 flex lg:hidden mb-10"><img src="https://i.ibb.co/J3pMbjj/2317953.jpg" className="rounded-lg" alt="" /></div>
+            <div className="col-span-3 mb-16 lg:mb-0">
                 <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
                     <AccordionHeader onClick={() => handleOpen(1)} className="text-lg">How can I submit my book for review on your website?</AccordionHeader>
                     <AccordionBody>
@@ -62,7 +63,7 @@ const FAQ = () => {
                     </AccordionBody>
                 </Accordion>
             </div>
-            <div className="col-span-2"><img src="https://i.ibb.co/J3pMbjj/2317953.jpg" className="rounded-lg" alt="" /></div>
+            <div className="col-span-2 hidden lg:flex"><img src="https://i.ibb.co/J3pMbjj/2317953.jpg" className="rounded-lg" alt="" /></div>
         </div>
     );
 };

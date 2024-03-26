@@ -2,6 +2,7 @@
     {
         "id": 1,
         "bookName": "To Kill a Mockingbird",
+        "name": "Mockingbird",
         "author": "Harper Lee",
         "image": "https://i.ibb.co/2knbn7S/To-Kill-a-Mockingbird.jpg",
         "review": "To Kill a Mockingbird by Harper Lee is a poignant portrayal of racial injustice and moral growth in the American South. Through the innocent eyes of Scout Finch, readers witness the trial of Tom Robinson, a black man falsely accused of raping a white woman. The novel explores themes of prejudice, compassion, and the loss of innocence, offering a timeless commentary on the complexities of human nature.",
@@ -18,6 +19,7 @@
     {
         "id": 2,
         "bookName": "The Great Gatsby",
+        "name": "Gatsby",
         "author": "F. Scott Fitzgerald",
         "image": "https://i.ibb.co/y40g64t/toppng-com-great-gatsby-book-cover-411x510.png",
         "review": "Set against the backdrop of the roaring 1920s, F. Scott Fitzgerald's The Great Gatsby is a captivating tale of love, greed, and the American Dream. Through the eyes of narrator Nick Carraway, readers are drawn into the extravagant world of Jay Gatsby and his obsession with the enigmatic Daisy Buchanan. The novel delves into themes of wealth, class, and the emptiness of materialism, painting a vivid portrait of a society on the brink of moral decay",
@@ -34,6 +36,7 @@
     {
         "id": 3,
         "bookName": "1984",
+        "name": "1984",
         "author": "George Orwell",
         "image": "https://i.ibb.co/N6gCzhp/1984.jpg",
         "review": "George Orwell's 1984 is a chilling dystopian novel that explores the dangers of totalitarianism and the erosion of individual freedom. Set in a totalitarian regime ruled by the oppressive Party led by Big Brother, the story follows Winston Smith as he rebels against the regime's thought control and surveillance. Through its depiction of constant surveillance, propaganda, and manipulation, 1984 remains a stark warning against the dangers of unchecked power and authoritarianism",
@@ -50,6 +53,7 @@
     {
         "id": 4,
         "bookName": "Pride and Prejudice",
+        "name": "P&P",
         "author": "Jane Austen",
         "image": "https://i.ibb.co/9GXQDrB/Pride-and-Prejudice.jpg",
         "review": "Jane Austen's Pride and Prejudice is a timeless classic that transcends generations with its wit, charm, and social commentary. Set in early 19th-century England, the novel follows the spirited Elizabeth Bennet as she navigates the complexities of love, marriage, and societal expectations. Through Elizabeth's journey of self-discovery and the memorable cast of characters, Austen explores themes of class, gender, and the pursuit of happiness.",
@@ -66,6 +70,7 @@
     {
         "id": 5,
         "bookName": "The Catcher in the Rye",
+        "name": "the Rye",
         "author": "J.D. Salinger",
         "image": "https://i.ibb.co/dPd4tFv/The-Catcher-in-the-Rye.jpg",
         "review": "J.D. Salinger's The Catcher in the Rye is a seminal coming-of-age novel that captures the angst and disillusionment of adolescence. Narrated by the cynical and rebellious Holden Caulfield, the novel follows his journey through New York City after being expelled from boarding school. With its themes of alienation, identity, and the loss of innocence, The Catcher in the Rye continues to resonate with readers of all ages",
@@ -82,6 +87,7 @@
     {
         "id": 6,
         "bookName": "Harry Potter and the Philosopher's Stone",
+        "name": "Harry Potter",
         "author": "J.K. Rowling",
         "image": "https://i.ibb.co/x6Cq8MW/Harry-Potter-and-the-Philosopher-s-Stone.jpg",
         "review": "J.D. Salinger's The Catcher in the Rye is a seminal coming-of-age novel that captures the angst and disillusionment of adolescence. Narrated by the cynical and rebellious Holden Caulfield, the novel follows his journey through New York City after being expelled from boarding school. With its themes of alienation, identity, and the loss of innocence, The Catcher in the Rye continues to resonate with readers of all ages",
@@ -98,6 +104,7 @@
     {
         "id": 7,
         "bookName": "The Hobbit",
+        "name": "Hobbit",
         "author": "J.R.R. Tolkien",
         "image": "https://i.ibb.co/yfjXDGL/The-Hobbit.jpg",
         "review": "J.R.R. Tolkien's The Hobbit is a delightful adventure filled with magic, danger, and unexpected heroism. Bilbo Baggins, a humble hobbit, is swept away from his comfortable home on a journey to reclaim treasure guarded by the dragon Smaug. Along the way, he encounters trolls, elves, goblins, and the mysterious creature Gollum. With its themes of bravery, friendship, and the power of the ordinary, The Hobbit is a timeless tale that appeals to readers of all ages.",
@@ -114,6 +121,7 @@
     {
         "id": 8,
         "bookName": "The Alchemist",
+        "name": "Alchemist",
         "author": "Paulo Coelho",
         "image": "https://i.ibb.co/HFvTGnv/The-Alchemist.jpg",
         "review": "Paulo Coelho's The Alchemist is a philosophical fable that follows the journey of Santiago, a shepherd boy, as he embarks on a quest to find his Personal Legend. Along the way, he encounters a series of spiritual teachers and learns profound lessons about destiny, love, and the interconnectedness of all things. With its timeless wisdom and inspirational message, The Alchemist has touched the hearts of millions of readers around the world",
@@ -130,6 +138,7 @@
     {
         "id": 9,
         "bookName": "The Lord of the Rings",
+        "name": "TLOTR",
         "author": "J.R.R. Tolkien",
         "image": "https://i.ibb.co/8cXtTNh/The-Lord-of-the-Rings.jpg",
         "review": "J.R.R. Tolkien's The Lord of the Rings is a timeless epic that transports readers to the enchanting world of Middle-earth. As Frodo Baggins embarks on a perilous quest to destroy the One Ring and thwart the dark lord Sauron, he is joined by a fellowship of diverse characters, each with their own strengths and weaknesses. From the idyllic Shire to the fiery depths of Mount Doom, Tolkien's masterful storytelling and richly imagined world captivate readers with its depth and detail. Through themes of heroism, friendship, and the struggle between good and evil, The Lord of the Rings explores the power of hope and the resilience of the human spirit. With its enduring legacy and universal appeal, Tolkien's magnum opus continues to inspire readers of all ages, inviting them to embark on a journey of courage, sacrifice, and redemption.",
@@ -143,6 +152,7 @@
       {
         "id": 10,
         "bookName": "Moby Dick",
+        "name": "Moby Dick",
         "author": "Herman Melville",
         "image": "https://i.ibb.co/52nKq93/Moby-Dick.jpg",
         "review": "Herman Melville's Moby Dick is a sprawling epic that explores themes of obsession, fate, and the human condition. Narrated by Ishmael, the novel follows Captain Ahab's relentless pursuit of the great white whale, Moby Dick, which symbolizes his insatiable thirst for revenge. Through its vivid imagery, rich symbolism, and philosophical musings, Moby Dick remains a masterpiece of American literature.",
@@ -156,6 +166,7 @@
       {
         "id": 11,
         "bookName": "Frankenstein",
+        "name": "Frank",
         "author": "Mary Shelley",
         "image": "https://i.ibb.co/6J3ccsD/Frankenstein.jpg",
         "review": "Mary Shelley's Frankenstein is a Gothic masterpiece that delves into themes of ambition, creation, and the nature of humanity. Dr. Victor Frankenstein's obsession with creating life leads to the birth of a monstrous creature, who seeks vengeance against his creator. Through its exploration of science, morality, and the consequences of playing god, Frankenstein continues to captivate readers with its haunting tale.",
@@ -169,6 +180,7 @@
       {
         "id": 12,
         "bookName": "Brave New World",
+        "name": "Brave",
         "author": "Aldous Huxley",
         "image": "https://i.ibb.co/xm7yDPD/Brave-New-World.jpg",
         "review": "Aldous Huxley's Brave New World presents a dystopian society where stability and happiness are prioritized above all else. Set in a future world where scientific advancements have eradicated suffering and individuality, citizens are conditioned to accept their predetermined roles in society. However, as protagonist Bernard Marx and outsider John the Savage challenge the status quo, readers are confronted with profound questions about freedom, identity, and the cost of utopia. Huxley's visionary tale serves as a cautionary reminder of the dangers of sacrificing human autonomy for the sake of societal harmony. With its thought-provoking themes and unsettling parallels to contemporary society, Brave New World remains a seminal work of speculative fiction that continues to provoke discussion and introspection.",

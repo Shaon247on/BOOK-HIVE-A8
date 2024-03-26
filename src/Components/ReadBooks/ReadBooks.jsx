@@ -22,8 +22,8 @@ const ReadBooks = () => {
     console.log(reads)
     return (
         <div>
-            <div className="text-center">
-                <h1 className="text-4xl font-bold">Total Read Books: {reads.length}</h1>
+            <div className="text-start lg:text-center">
+                <h1 className="text-3xl lg:text-4xl font-bold">Total Read Books: {reads.length}</h1>
             </div>
             <div>
                 {

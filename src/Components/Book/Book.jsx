@@ -98,11 +98,11 @@ const Book = () => {
         <div>
             <Toaster></Toaster>
 
-            <div className="flex gap-12 mx-24 mt-8 items-center">
-                <div className="p-12 w-1/2 h-[580px] text-center ">
-                    <img src={image} alt="" className="w-[425px] h-full mx-auto" />
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 mx-1 lg:mx-24 mt-8 items-center">
+                <div className="p-1 lg:p-12 w-full lg:w-1/2 h-[400px] lg:h-[580px] text-center ">
+                    <img src={image} alt="" className="w-[320px] lg:w-[425px] h-[400px] lg:h-full mx-auto" />
                 </div>
-                <div className="flex-1 text-[#131313] flex flex-col">
+                <div className="flex-1 text-[#131313] flex flex-col mx-6 lg:mx-0">
                     <h1 className="play text-5xl font-bold mb-2">{bookName}</h1>
                     <h3 className="text-[16px] text-[#131313CC] font-medium mb-7">By: <strong>{author}</strong></h3>
                     <h5 className="text-[16px] text-[#131313CC] font-semibold mb-7">{category}</h5>

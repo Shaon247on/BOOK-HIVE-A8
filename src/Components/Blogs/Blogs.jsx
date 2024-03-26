@@ -9,8 +9,8 @@ const Blogs = () => {
 
     return (
         <div className="text-center">
-            <h1 className="text-5xl font-bold mt-5">World of Literary Discourse <br /> Our Blog</h1>
-            <p className="text-[#131313B3] font-semibold w-[600px] mx-auto mt-4">Dive into a world of insightful commentary, engaging discussions, and thought-provoking analyses on all things literature. Our blog is your gateway to discovering new authors, exploring literary genres, and unraveling the mysteries behind beloved classics. </p>
+            <h1 className="text-2xl lg:text-5xl font-bold mt-5">World of Literary Discourse <br /> Our Blog</h1>
+            <p className="text-[#131313B3] font-semibold w-[320px] lg:w-[600px] mx-auto mt-4 text-[10px] lg:text-base">Dive into a world of insightful commentary, engaging discussions, and thought-provoking analyses on all things literature. Our blog is your gateway to discovering new authors, exploring literary genres, and unraveling the mysteries behind beloved classics. </p>
             <div>
                 {
                     books.slice(0, displayBooks).map(book => <Blog key={book.id} book={book}></Blog>)
