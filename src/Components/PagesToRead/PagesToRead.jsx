@@ -89,7 +89,7 @@ export default function PagesToRead() {
 
   return (
     <BarChart
-      className='mx-0 lg:mx-6 mt-9'
+      className='mx-0 lg:mx-6 mt-9 mb-11'
       width={window.innerWidth < 768 ? 400 : 1250}
       height={window.innerWidth < 768 ? 300 : 500}
       data={reads}
