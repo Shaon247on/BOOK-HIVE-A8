@@ -5,10 +5,8 @@ import ReadBook from "../ReadBook/ReadBook";
 import PropTypes from 'prop-types';
 
 const ReadBooks = ({sortedBooks}) => {    
-    console.log(sortedBooks)
     
     const allBooks = useLoaderData()
-    console.log(allBooks)
 
     const [reads, setReads] = useState([])
     useEffect(() => {
@@ -25,7 +23,6 @@ const ReadBooks = ({sortedBooks}) => {
         }
     }, [])
     
-    console.log(reads)
     
     return (
         <div>
@@ -45,7 +42,7 @@ const ReadBooks = ({sortedBooks}) => {
 };
 
 ReadBooks.propTypes = {
-    sortedBooks: PropTypes.array.isRequired
+    sortedBooks: PropTypes.array
 }
 
 export default ReadBooks;

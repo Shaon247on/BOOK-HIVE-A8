@@ -2,8 +2,13 @@ import { useEffect, useState } from "react";
 import { getStoredItemWishlist } from "../../Utlitity/wishlistLocalStorage";
 import { useLoaderData } from "react-router-dom";
 import WishListBook from "../WishListBook/WishListBook";
+import PropTypes from 'prop-types';
 
-const WishlistBooks = () => {const allBooks = useLoaderData()
+
+const WishlistBooks = ({sortedWishlist}) => {
+    
+    const allBooks = useLoaderData()
+
     const [reads, setReads] = useState([])
     useEffect(() => {
         const readStored = getStoredItemWishlist()
@@ -25,11 +30,18 @@ const WishlistBooks = () => {const allBooks = useLoaderData()
             </div>
             <div>
                 {
-                    reads.map(read => <WishListBook key={read.id} read={read}></WishListBook>)
+                    sortedWishlist.length === 0 && reads.map(read => <WishListBook key={read.id} reads={read}></WishListBook>)
+                }
+                {
+                    sortedWishlist.length > 0 && sortedWishlist.map(read => <WishListBook key={read.id} reads={read}></WishListBook>)
                 }
             </div>
         </div>
     );
 };
+
+WishlistBooks.propTypes = {
+    sortedWishlist: PropTypes.array 
+}
 
 export default WishlistBooks;

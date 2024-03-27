@@ -8,7 +8,7 @@ import Icon from "../Icon/Icon";
 
 const FAQ = () => {
     const [open, setOpen] = React.useState(0);
-
+    
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
     return (
         <div className="block lg:grid grid-flow-row grid-cols-5 gap-12 mx-5 lg:mx-28 mt-6 lg:mt-28 items-center">

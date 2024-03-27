@@ -1,6 +1,7 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
+    
 
     const links = <>
         <li className="hover:bg-blue-gray-100 rounded-2xl hover:scale-105 ml-3 transition"><NavLink to={'/'}>Home</NavLink></li>
@@ -22,7 +23,7 @@ const Header = () => {
                             {links}
                         </ul>
                     </div>
-                    <h1 className="text-base lg:text-2xl font-bold transition border-2 p-4 hover:scale-105 hover:border-[#59C6D2] hover:no-underline focus:no-underline rounded-2xl">B<span className="text-[#23BE0A]">O</span><span className="text-[#59C6D2]">O</span>K HIVE</h1>
+                    <h1 className="text-base lg:text-2xl font-bold transition border-2 p-4 hover:scale-105 hover:border-[#59C6D2] hover:no-underline focus:no-underline rounded-2xl"><Link to='/'>B<span className="text-[#23BE0A]">O</span><span className="text-[#59C6D2]">O</span>K HIVE</Link></h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

@@ -47,7 +47,6 @@ const Book = () => {
     }
     const handleWishlistButton = () => {
         const bookedMarked = getStoredItem()
-        console.log(bookedMarked)
         const exists = bookedMarked.find(booked => booked === idNum)
         if (!exists) {
             const wishlist = getStoredItemWishlist()

@@ -1,8 +1,15 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useNavigation } from "react-router-dom";
 import Books from "../Books/Books";
 import { useState } from "react";
+import Spinner from "../Spinner/Spinner";
 
 const Home = () => {
+    const navigation = useNavigation()
+    const loading = navigation.state
+    console.log(loading)
+    if(loading){
+        <Spinner></Spinner>
+    }
     const allBooks = useLoaderData()    
     const [displayBooks, setDisplayBooks] = useState(6)
 

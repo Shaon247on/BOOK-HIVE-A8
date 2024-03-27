@@ -85,9 +85,7 @@ export default function PagesToRead() {
                 setReads(readList)
             }
         }
-    }, [])
-    console.log(reads)
-    
+    }, [])    
 
   return (
     <BarChart
