@@ -2,7 +2,7 @@
 ![Logo](https://i.ibb.co/Pgkz6ck/Banner-readme.png)
 
 
-Live Site Link: [aminul-book-review.surge.sh](https://aminul-book-review.surge.sh)
+Live Site Link: https://aminul-book-review.surge.sh
 
 ## 🚀 About Me
 I'm aminul Islam Shaon, an student who is giving his full potentiality to learn Web Development.
