@@ -22,17 +22,15 @@ const ReadBooks = () => {
     }, [])
     
     const [sortedBooks, setSortedBooks] = useState([])
-    const sortBooksByRating = (reads) => {
-        return [...reads].sort((a, b) => a.rating - b.rating);
-    }
-    const handleSortButtonClick = () => {
-        const sorted = sortBooksByRating(reads);
-        setSortedBooks(sorted);
+    const handleSortButtonClick = (reads) => {
+        const rearranged = [...reads].sort((a, b) => a.rating - b.rating);
+        console.log(rearranged)
+        setSortedBooks(rearranged);
     }
     return (
         <div>
             <div className="text-start lg:text-center">
-                <button onClick={handleSortButtonClick}>Try Me</button>
+                <button onClick={()=>handleSortButtonClick(reads)}>Try Me</button>
                 <h1 className="text-3xl lg:text-4xl font-bold">Total Read Books: {reads.length}</h1>
             </div>
             <div>
