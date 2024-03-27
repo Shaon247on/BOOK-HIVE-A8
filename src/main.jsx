@@ -15,6 +15,7 @@ import Blogs from './Components/Blogs/Blogs.jsx';
 import ReadBooks from './Components/ReadBooks/ReadBooks.jsx';
 import WishlistBooks from './Components/WishlistBooks/WishlistBooks.jsx';
 import PagesToRead from './Components/PagesToRead/PagesToRead.jsx';
+import Dropdown from './Components/DropDown/DropDown.jsx';
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,11 @@ const router = createBrowserRouter([
         path:'/page',
         loader:() => fetch('books.json'),
         element:<PagesToRead></PagesToRead>
+      },
+      {
+        path:'/dropdown',
+        loader:() => fetch('books.json'),
+        element:<Dropdown></Dropdown>
       }
     ],
   },

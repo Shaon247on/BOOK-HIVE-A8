@@ -12,14 +12,14 @@ const ReadBook = ({ read }) => {
                     <p className="my-4 font-medium">By: {author}</p>
                     <div className='flex flex-col lg:flex-row justify-start lg:justify-start gap-2 lg:gap-5 items-start lg:items-center'>
                         <h1 className='font-bold'>tag:</h1>
-                        <div className='flex flex-col lg:flex-row items-start lg:items-center gap-1 lg:gap-4 mt-0 lg:mt-2'>
+                        <div className='flex flex-col flex-grow lg:flex-row items-start lg:items-center gap-1 lg:gap-4 mt-0 lg:mt-2'>
                             {
                                 tags.map((tag, idx) => <p key={idx} className="text-[#23BE0A] font-medium mb-2">#{tag}</p>)
                             }
                         </div>
                         <div className='flex items-center gap-2'>
                             <CiLocationOn></CiLocationOn>
-                            <p className='text-[#131313CC]'>Year of Publishing: {yearOfPublishing}</p>
+                            <p className='text-[#131313CC] mr-12'>Year of Publishing: {yearOfPublishing}</p>
                             
                         </div>
                     </div>
