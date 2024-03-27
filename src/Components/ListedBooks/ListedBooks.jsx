@@ -8,18 +8,18 @@ export const SortContext = createContext('Function')
 
 const ListedBooks = () => {
     const allBooks = useLoaderData();
-    const [sortedBooks, setSortedBooks] = useState([]); 
-    const sortByRatingDescending = () => {
-        const sorted = [...allBooks].sort((a, b) => b.rating - a.rating);
-        setSortedBooks(sorted);
-    };
+    console.log(allBooks)
+    const [sortedData, setSortedData] = useState([])
+    const handleSortButton = e =>{
+        console.log(e)
+    }
 
     return (
         <div>
             <SortContext.Provider>
                 <div className="text-center mt-9 mb-28">
                     <h1 className="text-4xl font-bold mb-4">Discover Your Next Favorite Read <br /> Your Book Collection</h1>
-                    <Dropdown ></Dropdown>
+                    <Dropdown handleSortButton={handleSortButton} ></Dropdown>
                 </div>
                 <div role="tablist" className="tabs tabs-lifted mx-1 lg:mx-24">
                     <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Read list" />

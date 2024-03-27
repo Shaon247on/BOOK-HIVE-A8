@@ -18,7 +18,6 @@ const WishlistBooks = () => {const allBooks = useLoaderData()
             }
         }
     }, [])
-    console.log(reads)
     return (
         <div>
             <div className="text-start lg:text-center">
