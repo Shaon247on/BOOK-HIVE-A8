@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 const Books = ({ books }) => {
     const { id, author, bookName, category, image, rating, tags } = books
-
+    
+    
     return (
         <div className="card transition border-2 p-4 hover:scale-105 hover:border-[#59C6D2] hover:no-underline focus:no-underline">
             <Link to={`/${id}`}>

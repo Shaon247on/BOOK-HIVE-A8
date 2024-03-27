@@ -5,7 +5,9 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Book = () => {
     const books = useLoaderData()
-    const { id } = useParams()
+    const { id } = useParams()    
+    
+    
     const idNum = parseInt(id)
     const detailedBook = books.find(book => book.id === idNum)
     const { author, bookName, category, image, publisher, rating, review, tags, totalPages, yearOfPublishing
@@ -94,11 +96,12 @@ const Book = () => {
         }
 
     }
+    
     return (
         <div>
             <Toaster></Toaster>
 
-            <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 mx-1 lg:mx-24 mt-8 items-center">
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 mx-1 lg:mx-24 mt-8 items-center mb-9">
                 <div className="p-1 lg:p-12 w-full lg:w-1/2 h-[400px] lg:h-[580px] text-center ">
                     <img src={image} alt="" className="w-[320px] lg:w-[425px] h-[400px] lg:h-full mx-auto" />
                 </div>

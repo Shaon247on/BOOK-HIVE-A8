@@ -8,7 +8,7 @@ export const SortContext = createContext('Function')
 
 const ListedBooks = () => {
     const allBooks = useLoaderData();
-    const [sortedBooks, setSortedBooks] = useState([...allBooks]); 
+    const [sortedBooks, setSortedBooks] = useState([]); 
     const sortByRatingDescending = () => {
         const sorted = [...allBooks].sort((a, b) => b.rating - a.rating);
         setSortedBooks(sorted);

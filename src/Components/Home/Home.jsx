@@ -3,7 +3,7 @@ import Books from "../Books/Books";
 import { useState } from "react";
 
 const Home = () => {
-    const allBooks = useLoaderData()
+    const allBooks = useLoaderData()    
     const [displayBooks, setDisplayBooks] = useState(6)
 
     return (
@@ -15,7 +15,7 @@ const Home = () => {
                     <p className="text-sm text-gray-600 w-[300px] lg:w-[500px] ">Welcome to <span className="font-semibold underline">BOOK HIVE</span>,<br /> Where literature comes to life! Dive into captivating reviews, insightful critiques, and personalized recommendations. Let the adventure begin!</p>
                     <button className="btn bg-[#23BE0A] text-white font-bold mt-4 lg:mt-9"> <Link to='/list'>View The List</Link> </button>
                 </div>
-                <div className="border-2 border-red-300"><img src="https://i.ibb.co/F5W9FQF/banner.jpg" alt="" /></div>
+                <div className=""><img src="https://i.ibb.co/F5W9FQF/banner.jpg" alt="" /></div>
             </section>
             {/* books Section */}
             <section>

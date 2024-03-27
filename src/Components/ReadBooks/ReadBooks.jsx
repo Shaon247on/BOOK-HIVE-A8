@@ -20,8 +20,8 @@ const ReadBooks = () => {
             }
         }
     }, [])
-    const rearrange = [...reads]
-    const [sortedBooks, setSortedBooks] = useState(rearrange)
+    
+    const [sortedBooks, setSortedBooks] = useState([])
     const sortBooksByRating = (reads) => {
         return [...reads].sort((a, b) => a.rating - b.rating);
     }
