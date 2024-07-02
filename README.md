@@ -1,5 +1,5 @@
 
-![Logo](https://i.ibb.co/Pgkz6ck/Banner-readme.png)
+![Logo](https://i.ibb.co/5GFzGCW/Realty-Nest-1.png)
 
 
 Live Site Link: https://aminul-book-review.surge.sh
